@@ -7,7 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
+    <script>
+        function changeImagep1() {
+            var img = document.getElementById("p1");
+            if (img.src.match("images/p1-1.png")) {
+                img.src = "images/p1-2.png";
+            } else if (img.src.match("images/p1-2.png")) {
+                img.src = "images/p1-3.png";
+            } else {
+                img.src = "images/p1-1.png";
+            }
+        }
+
+        function changeImagep2() {
+            var img = document.getElementById("p2");
+            if (img.src.match("images/p2-1.png")) {
+                img.src = "images/p2-2.png";
+            } else if (img.src.match("images/p2-2.png")) {
+                img.src = "images/p2-3.png";
+            } else {
+                img.src = "images/p2-1.png";
+            }
+        }
+
+        function changeImagep3() {
+            var img = document.getElementById("p3");
+            if (img.src.match("images/p3-1.png")) {
+                img.src = "images/p3-2.png";
+            } else if (img.src.match("images/p3-2.png")) {
+                img.src = "images/p3-3.png";
+            } else {
+                img.src = "images/p3-1.png";
+            }
+        }
+    </script>
+
+    </script>
+
+
 </head>
 
 <body>
@@ -30,11 +67,13 @@
 
     <div>
         <div id="cellOne">
-            <img class="panel" src="images/p1-1.png">
-            <img class="panel" src="images/p2-1.png">
-            <img class="panel" src="images/p3-1.png">
+            <img id="p1" class="panel" src="images/p1-1.png" onclick="changeImagep1()">
+            <img id="p2" class="panel" src="images/p2-1.png" onclick="changeImagep2()">
+            <img id="p3" class="panel" src="images/p3-1.png" onclick="changeImagep3()">
         </div>
     </div>
+
+
 </body>
 
 </html>
