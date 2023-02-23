@@ -25,11 +25,10 @@ body{
     }
 
     #cellOne{
-      display: flex;
-      justify-content: center;
+
       padding: none;
       transform: translate(0,30%);
-      margin: auto;
+
       }
       .panel{
           height:450px;

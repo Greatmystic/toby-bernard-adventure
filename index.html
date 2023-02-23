@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>T&B Interactive Comic</title>
     <link rel="stylesheet" href="css/style.css" />
     <script>
+
         function changeImagep1() {
             var img = document.getElementById("p1");
             if (img.src.match("images/p1-1.png")) {
@@ -42,8 +43,9 @@
         }
     </script>
 
-    </script>
-
+    <meta property="og:title" content="Toby & Bernard Interactive Webcomic">
+    <meta property="og:image" content="images/preview.png">
+    <meta property="og:description" content="Customize a comic with Toby & Bernard">
 
 </head>
 
@@ -67,9 +69,11 @@
 
     <div>
         <div id="cellOne">
-            <img id="p1" class="panel" src="images/p1-1.png" onclick="changeImagep1()">
-            <img id="p2" class="panel" src="images/p2-1.png" onclick="changeImagep2()">
-            <img id="p3" class="panel" src="images/p3-1.png" onclick="changeImagep3()">
+            <center>
+                <img id="p1" class="panel" src="images/p1-1.png" onclick="changeImagep1()">
+                <img id="p2" class="panel" src="images/p2-1.png" onclick="changeImagep2()">
+                <img id="p3" class="panel" src="images/p3-1.png" onclick="changeImagep3()">
+            </center>
         </div>
     </div>
 
